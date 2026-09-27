@@ -165,6 +165,14 @@ git push origin hotfix/critical-bug
 
 ---
 
+## Release Plans
+
+| Version | Description | Link |
+|---------|-------------|------|
+| 0.3.0 | MVP — User Selection & Home | [Release Plan](releases/v0.3.0.md) |
+
+---
+
 ## Release Automation (Future)
 
 - [ ] GitHub Actions for automated testing on PR

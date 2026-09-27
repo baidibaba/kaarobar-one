@@ -24,6 +24,7 @@ docs/
 ├── COMPONENTS.md          # Component library
 ├── RELEASE.md             # Release process and version rules
 ├── CHANGELOG.md           # Version history
+├── releases/              # Release plans for upcoming versions
 └── features/              # Feature-specific documentation
     ├── README.md          # Index of all features
     ├── user-auth.md       # Example: User authentication
