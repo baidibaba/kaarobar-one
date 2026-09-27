@@ -5,6 +5,23 @@ All notable changes to the Kaarobar One project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.0] - 2026-09-27
+
+### Added
+- Next.js + TypeScript + Tailwind CSS + Dexie.js setup
+- Database schema (Users, Transactions, Inventory, Settings)
+- Repository pattern for data access
+- Language system with 3 options (Both, English only, Urdu only)
+- UI components (Button, Input, Card, Modal, Badge, Avatar, Loading)
+- Layout components (Header, Sidebar, BottomNav, MainLayout, AuthLayout)
+- Business components (UserSelection, PinInput)
+- Route groups and pages (auth + dashboard)
+- Database migration system
+- Bilingual support (English + Urdu)
+- PWA manifest
+- Vercel deployment configuration
+- Complete documentation
+
 ## [Unreleased]
 
 ### Added
