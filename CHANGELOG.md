@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Figma design integration with MCP connection
 - Logo design with bilingual (English + Urdu) support
 - Noto Nastaliq Urdu font integration for RTL typography
+- Language system with 3 options (Both, English only, Urdu only)
+- Language context provider with persistence
+- Language selector component
 
 ## [0.1.0] - 2026-09-27
 

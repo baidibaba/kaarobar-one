@@ -22,8 +22,24 @@ Start with the smallest viable product, validate with real users, learn from fee
 | CI/CD | Vercel deployment, environments | Done |
 | Bilingual setup | i18n system, English + Urdu translations | Done |
 | Language options | Both, English only, Urdu only | Done |
+| Language store | Context provider with persistence | Done |
+| Language selector | 3-option toggle component | Done |
+| Urdu font | Noto Nastaliq Urdu via next/font | Done |
 
 **Deliverable:** Deployed foundation with working database layer and bilingual support.
+
+### Foundation Progress
+
+| Item | Status |
+|------|--------|
+| Language system (store, selector, font, docs) | Done |
+| Settings repository | Pending |
+| Database seed data | Pending |
+| Migrations setup | Pending |
+| UI components (Button, Input, Card, etc.) | Pending |
+| Layout components (Header, Sidebar, BottomNav) | Pending |
+| Utilities (formatCurrency, formatDate, cn) | Pending |
+| Route groups and pages | Pending |
 
 ---
 
