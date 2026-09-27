@@ -160,7 +160,8 @@ git push origin hotfix/critical-bug
 
 | Version | Date | Description |
 |---------|------|-------------|
-| 0.1.0 | 2026-09-27 | Foundation — language system, database, UI components, routes |
+| 0.1.0 | 2026-09-27 | Initial project setup, docs, Figma connection, logo |
+| 0.2.0 | 2026-09-27 | Foundation — language system, database, UI components, layout, routes, migrations |
 
 ---
 
