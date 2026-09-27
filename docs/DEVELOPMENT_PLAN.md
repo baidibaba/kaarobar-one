@@ -33,12 +33,12 @@ Start with the smallest viable product, validate with real users, learn from fee
 | Item | Status |
 |------|--------|
 | Language system (store, selector, font, docs) | Done |
-| Settings repository | Pending |
-| Database seed data | Pending |
+| Settings repository | Done |
+| Database seed data | Done |
+| Utilities (formatCurrency, formatDate, cn) | Done |
 | Migrations setup | Pending |
 | UI components (Button, Input, Card, etc.) | Pending |
 | Layout components (Header, Sidebar, BottomNav) | Pending |
-| Utilities (formatCurrency, formatDate, cn) | Pending |
 | Route groups and pages | Pending |
 
 ---

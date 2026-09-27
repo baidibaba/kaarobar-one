@@ -49,11 +49,13 @@ Before deploying, verify:
 
 ## 3. Deployment Process
 
-### Automatic Deployment (Vercel)
+### Manual Deployment (Vercel)
 
-1. **Push to `main`** → Auto-deploys to production
-2. **Open a PR** → Auto-deploys preview environment
-3. **Merge PR** → Production deployment triggers
+Auto-deploy is **disabled**. Deployments are manual only.
+
+1. **Push to `main`** → No auto-deploy
+2. **Deploy to production** → Run `npx vercel --prod`
+3. **Deploy to preview** → Run `npx vercel`
 
 ### Manual Deployment (CLI)
 
@@ -115,10 +117,10 @@ vercel env add NEXT_PUBLIC_APP_NAME development
 
 | Event | Action |
 |-------|--------|
-| Push to `main` | Deploy to production |
-| PR opened/updated | Deploy preview |
-| PR merged | Deploy to production |
-| Tag `v*` | Deploy to production (manual approval) |
+| Push to `main` | No auto-deploy |
+| `npx vercel --prod` | Deploy to production |
+| `npx vercel` | Deploy to preview |
+| Tag `v*` | Deploy to production (manual) |
 
 ### Rollback Rules
 

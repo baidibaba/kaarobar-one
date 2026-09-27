@@ -123,8 +123,8 @@ dev (staging)
 
 **Git Integration:**
 - Production Branch: `main`
-- Auto-deploy: Enabled
-- Preview Deployments: Enabled
+- Auto-deploy: Disabled (manual deploy only)
+- Preview Deployments: Disabled (manual deploy only)
 
 ---
 
