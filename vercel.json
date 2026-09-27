@@ -5,6 +5,9 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "regions": ["sin1"],
+  "git": {
+    "deploymentEnabled": false
+  },
   "headers": [
     {
       "source": "/(.*)",
