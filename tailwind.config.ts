@@ -20,11 +20,16 @@ const config: Config = {
           700: "#166534",
           800: "#14532d",
           900: "#052e16",
+          soft: "#e8f5ec", // Figma --cm-soft: selected nav background
         },
         accent: {
           400: "#fbbf24",
           500: "#f59e0b",
           600: "#d97706",
+          logo: "#f2a626", // Figma logo "1"
+        },
+        surface: {
+          warm: "#faf7f2", // Figma sidebar nav-group background
         },
       },
       fontFamily: {

@@ -8,7 +8,7 @@ import { Sidebar } from "./Sidebar";
 
 /**
  * Main layout wrapper for authenticated dashboard pages.
- * Shows sidebar on desktop, bottom nav on mobile.
+ * Shows sidebar on desktop (lg+), bottom nav below that.
  */
 export function MainLayout({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -18,10 +18,10 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Sidebar />
-      <div className="md:pl-64">
+      <Sidebar user={user} />
+      <div className="lg:pl-[280px]">
         <Header userName={user.name} userAvatar={user.avatar} />
-        <main className="p-4 pb-20 md:pb-4">{children}</main>
+        <main className="p-4 pb-28 lg:pb-4">{children}</main>
         <BottomNav />
       </div>
     </div>

@@ -3,37 +3,42 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { Icon, type IconName } from "@/components/ui/Icon";
 
-const navItems = [
-  { href: "/dashboard", label: "Home", labelUrdu: "ہوم", icon: "🏠" },
-  { href: "/transactions", label: "Sale", labelUrdu: "فروخت", icon: "🛒" },
-  { href: "/inventory", label: "Stock", labelUrdu: "اسٹاک", icon: "📦" },
-  { href: "/people", label: "People", labelUrdu: "لوگ", icon: "👥" },
-  { href: "/reports", label: "Ledger", labelUrdu: "لیجر", icon: "📊" },
+const navItems: { href: string; label: string; labelUrdu: string; icon: IconName }[] = [
+  { href: "/dashboard", label: "Home", labelUrdu: "ہوم", icon: "house" },
+  { href: "/transactions", label: "Sale", labelUrdu: "بکری", icon: "shopping-bag" },
+  { href: "/inventory", label: "Stock", labelUrdu: "سٹاک", icon: "package-2" },
+  { href: "/people", label: "People", labelUrdu: "لوگ", icon: "users" },
+  { href: "/ledger", label: "Ledger", labelUrdu: "لیجر", icon: "book-open" },
 ];
 
 /**
- * Bottom navigation bar for mobile devices.
+ * Bottom navigation bar for mobile devices (Figma: Bottom Nav).
  */
 export function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 border-t border-gray-200 bg-white">
-      <div className="flex items-center justify-around">
+    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white pb-[max(4px,env(safe-area-inset-bottom))] lg:hidden">
+      <div className="flex items-center justify-between px-3 pt-2.5">
         {navItems.map((item) => {
           const isActive = pathname.startsWith(item.href);
           return (
             <Link
               key={item.href}
               href={item.href}
+              aria-current={isActive ? "page" : undefined}
               className={cn(
-                "flex flex-1 flex-col items-center gap-1 py-3 text-xs transition-colors",
-                isActive ? "text-primary-600" : "text-gray-500 hover:text-gray-700"
+                "flex w-[68px] flex-col items-center gap-1 rounded-2xl py-1.5",
+                isActive ? "bg-primary-soft text-primary-600" : "text-gray-600"
               )}
             >
-              <span className="text-xl">{item.icon}</span>
-              <span>{item.label}</span>
+              <Icon name={item.icon} />
+              <span dir="auto" className="text-sm font-extrabold">
+                {item.labelUrdu}
+              </span>
+              <span className="text-[10px] font-semibold uppercase">{item.label}</span>
             </Link>
           );
         })}
