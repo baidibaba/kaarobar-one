@@ -1,0 +1,15 @@
+# Code Owners
+# These owners are used for automatic review requests
+
+# Global owners
+* @baidibaba
+
+# Database layer
+/src/db/ @baidibaba
+
+# Components
+/src/components/ @baidibaba
+
+# Documentation
+/docs/ @baidibaba
+/README.md @baidibaba
