@@ -23,6 +23,13 @@ export const translations = {
     today: "Today",
     thisWeek: "This Week",
     thisMonth: "This Month",
+    whoIsWorking: "Who is Working Today?",
+    enterPin: "Enter PIN",
+    back: "Back",
+    admin: "Admin",
+    worker: "Worker",
+    viewer: "Viewer",
+    people: "People",
   },
   ur: {
     appName: "کاروبار ون",
@@ -46,6 +53,13 @@ export const translations = {
     today: "آج",
     thisWeek: "اس ہفتے",
     thisMonth: "اس مہینے",
+    whoIsWorking: "آج کون کام کر رہا ہے؟",
+    enterPin: "PIN درج کریں",
+    back: "واپس",
+    admin: "ایڈمن",
+    worker: "ورکر",
+    viewer: "ویوئر",
+    people: "لوگ",
   },
 } as const;
 

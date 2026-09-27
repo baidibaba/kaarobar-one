@@ -22,6 +22,7 @@ docs/
 ├── API.md                 # API endpoints
 ├── DEPLOYMENT.md          # Deployment guide
 ├── COMPONENTS.md          # Component library
+├── RELEASE.md             # Release process and version rules
 ├── CHANGELOG.md           # Version history
 └── features/              # Feature-specific documentation
     ├── README.md          # Index of all features

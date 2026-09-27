@@ -36,10 +36,12 @@ Start with the smallest viable product, validate with real users, learn from fee
 | Settings repository | Done |
 | Database seed data | Done |
 | Utilities (formatCurrency, formatDate, cn) | Done |
-| Migrations setup | Pending |
-| UI components (Button, Input, Card, etc.) | Pending |
-| Layout components (Header, Sidebar, BottomNav) | Pending |
-| Route groups and pages | Pending |
+| UI components (Button, Input, Card, etc.) | Done |
+| Layout components (Header, Sidebar, BottomNav) | Done |
+| Business components (UserSelection, PinInput) | Done |
+| Route groups and pages | Done |
+| Loading and error states | Done |
+| Migrations setup | Done |
 
 ---
 
@@ -596,6 +598,7 @@ Home → Ledger Tab → View Summary → Select Period → View Charts → Expor
 | [Backup](BACKUP.md) | Data backup and export |
 | [AI Roadmap](AI_ROADMAP.md) | AI implementation roadmap |
 | [Documentation](DOCUMENTATION.md) | Documentation conventions |
+| [Release](RELEASE.md) | Version release process and rules |
 
 ---
 

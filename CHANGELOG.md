@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Settings repository for key-value storage
 - Database seed data for default users
 - Utility functions (formatCurrency, formatDate, cn, generateId, debounce)
+- UI components (Button, Input, Card, Modal, Badge, Avatar, Loading)
+- Layout components (Header, Sidebar, BottomNav, MainLayout, AuthLayout)
+- Business components (UserSelection, PinInput)
+- Route groups and pages (auth, dashboard)
+- Loading and error states
+- Database migration system with initial schema
 
 ## [0.1.0] - 2026-09-27
 

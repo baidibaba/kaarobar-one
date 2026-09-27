@@ -1,8 +1,19 @@
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { Loading } from "@/components/ui/Loading";
+import { useAuth } from "@/hooks/useAuth";
+
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold text-primary-600">Kaarobar One</h1>
-      <p className="mt-4 text-lg text-gray-600">Business Management Application</p>
-    </main>
-  );
+  const router = useRouter();
+  const { user, loading } = useAuth();
+
+  useEffect(() => {
+    if (!loading) {
+      router.push(user ? "/dashboard" : "/onboarding");
+    }
+  }, [user, loading, router]);
+
+  return <Loading message="Loading..." />;
 }
