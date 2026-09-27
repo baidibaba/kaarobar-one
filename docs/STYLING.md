@@ -9,37 +9,26 @@ src/styles/
 └── README.md                # This file
 ```
 
-## File Responsibilities
-
-### `globals.css`
-- Tailwind directives (`@tailwind base/components/utilities`)
-- CSS custom properties (`:root` variables)
-- Global resets and base styles
-- Custom scrollbar styles
-- Font imports (if not using `next/font`)
-
-**Max 100 lines.** If larger, move variables to `theme.ts`.
-
-### `theme.ts`
-- Design tokens as TypeScript constants
-- Color palette, spacing scale, typography scale
-- Exported for use in components and Tailwind config
-
-**Max 150 lines.** Single source of truth for design tokens.
-
 ## Design Tokens
 
 ### Colors
+
+**Primary: Green (#1a5f35)** — from Figma design
+
 ```ts
 // theme.ts
 export const colors = {
   primary: {
-    50: "#eff6ff",
-    100: "#dbeafe",
-    500: "#3b82f6",
-    600: "#21408C",  // Main brand
-    700: "#1e3a8a",
-    900: "#172554",
+    50: "#f0fdf4",
+    100: "#dcfce7",
+    200: "#bbf7d0",
+    300: "#86efac",
+    400: "#4ade80",
+    500: "#22c55e",
+    600: "#1a5f35",  // Main brand color (from Figma)
+    700: "#166534",
+    800: "#14532d",
+    900: "#052e16",
   },
   accent: {
     400: "#fbbf24",
@@ -53,6 +42,7 @@ export const colors = {
 ```
 
 ### Spacing
+
 ```ts
 export const spacing = {
   xs: "0.25rem",   // 4px
@@ -65,6 +55,7 @@ export const spacing = {
 ```
 
 ### Typography
+
 ```ts
 export const typography = {
   fontFamily: {
@@ -91,8 +82,8 @@ export const typography = {
 <button className="rounded-lg bg-primary-600 px-4 py-2 text-white">
 
 // BAD
-<button className="blue-button">
-<button style={{ background: "#21408C" }}>
+<button className="green-button">
+<button style={{ background: "#1a5f35" }}>
 ```
 
 ### 2. Class Order
@@ -128,6 +119,14 @@ const cardClasses = getCardClasses(variant, isActive);
 <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:gap-8">
 ```
 
+## Figma Design Alignment
+
+| Element | Figma Color | Tailwind Token |
+|---------|------------|----------------|
+| Primary Button | `#1a5f35` | `bg-primary-600` |
+| Primary Button Text | White | `text-white` |
+| Accent (Save) | `#f59e0b` | `bg-accent-500` |
+
 ## Rules
 
 | Rule | Description |
@@ -136,5 +135,5 @@ const cardClasses = getCardClasses(variant, isActive);
 | No inline styles | Except dynamic values (e.g., `style={{ width: size }}`) |
 | No `!important` | Use specificity or refactor |
 | No global CSS | Except in `globals.css` |
-| Use tokens | `text-primary-600` not `text-blue-700` |
+| Use tokens | `bg-primary-600` not `bg-green-700` |
 | Semantic names | `text-error` not `text-red-500` |

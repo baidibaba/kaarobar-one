@@ -163,6 +163,9 @@ git push origin hotfix/critical-bug
 | 0.1.0 | 2026-09-27 | Initial project setup, docs, Figma connection, logo |
 | 0.2.0 | 2026-09-27 | Foundation — language system, database, UI components, layout, routes, migrations |
 
+### Color Scheme Change
+- **v0.2.0:** Primary color changed from blue (#21408C) to **green (#1a5f35)** to match Figma design
+
 ---
 
 ## Release Plans
