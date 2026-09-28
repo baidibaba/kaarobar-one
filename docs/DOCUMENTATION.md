@@ -25,7 +25,9 @@ docs/
 ├── RELEASE.md             # Release process and version rules
 ├── CHANGELOG.md           # Version history
 ├── releases/              # Release plans for upcoming versions
-└── features/              # Feature-specific documentation
+├── features/              # Feature-specific documentation
+├── TEAM.md                # Team collaboration guide
+└── AI_GUIDE.md            # AI agent guide — conventions, rules, and patterns
     ├── README.md          # Index of all features
     ├── user-auth.md       # Example: User authentication
     └── transactions.md    # Example: Transaction management
