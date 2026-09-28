@@ -25,6 +25,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- App shell from Figma: bilingual bottom nav (phones) and desktop sidebar with 5 daily links, 3 collapsible groups (Reports, Staff & Wages, Accounts), Cameras and Settings (#1)
+- Ledger page placeholder (`/ledger`), separate from Reports per Figma
+- `Icon` component using the Figma icon SVGs, recoloured by text colour
+- Shared `Logo` component
+- Figma-matched user selection and PIN screens, with keyboard support for PIN entry on desktop
+- Collaboration guide for two developers (`docs/COLLABORATION.md`)
 - Initial project setup and repository structure
 - Figma design integration with MCP connection
 - Logo design with bilingual (English + Urdu) support
@@ -41,6 +47,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Route groups and pages (auth, dashboard)
 - Loading and error states
 - Database migration system with initial schema
+
+### Changed
+- Sidebar and bottom nav switch at the `lg` breakpoint; the top header is hidden on desktop
+- Login screens no longer show the language buttons (not in Figma); language is still set in Settings
+
+### Fixed
+- Sidebar and bottom nav were both visible on mobile
+- User selection showed no users (boolean `isActive` can't be queried through an IndexedDB index)
+- Pressing Enter on a focused numpad key entered a digit and confirmed at the same time
+
+### Security
+- PIN is now verified before login; previously any 4 digits logged in as any user
 
 ## [0.1.0] - 2026-09-27
 

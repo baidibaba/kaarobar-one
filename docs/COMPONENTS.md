@@ -12,7 +12,9 @@ Base building blocks — reusable across the app.
 | `Modal` | Dialog overlay | `isOpen`, `onClose`, `title`, `children` |
 | `Select` | Dropdown select | `options`, `value`, `onChange`, `label` |
 | `Badge` | Status indicator | `variant`, `children` |
-| `Avatar` | User avatar image | `src`, `name`, `size` |
+| `Avatar` | User avatar image | `src`, `name`, `size` (`sm`, `md`, `lg`, `xl`) |
+| `Icon` | Figma icon from `public/icons/`, takes text colour | `name`, `className` |
+| `Logo` | Kaarobar One logo (Figma `Logo/KaarobarOne`) | — |
 | `Loading` | Loading spinner | `size`, `message` |
 
 ## Layout Components (`src/components/layout/`)
@@ -22,7 +24,8 @@ App shell and navigation.
 | Component | Description |
 |-----------|-------------|
 | `Header` | Top navigation bar |
-| `Sidebar` | Side navigation menu |
+| `Sidebar` | Desktop navigation (`lg`+), see [App Shell](features/app-shell.md) |
+| `BottomNav` | Phone navigation (below `lg`), see [App Shell](features/app-shell.md) |
 | `Footer` | Bottom bar |
 | `MainLayout` | Main app layout wrapper |
 | `AuthLayout` | Authentication pages layout |
@@ -33,7 +36,8 @@ Domain-specific components.
 
 | Component | Description |
 |-----------|-------------|
-| `UserSelection` | User selection grid for onboarding |
+| `UserSelection` | "Who is working today?" grid, see [Onboarding](features/onboarding.md) |
+| `PinInput` | PIN numpad with verification, see [Onboarding](features/onboarding.md) |
 | `TransactionList` | List of transactions |
 | `TransactionForm` | Add/edit transaction form |
 | `InventoryTable` | Inventory management table |
