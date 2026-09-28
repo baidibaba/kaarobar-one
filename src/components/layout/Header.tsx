@@ -15,7 +15,7 @@ export function Header({ userName, userAvatar }: HeaderProps) {
   const { t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-gray-200 bg-white">
+    <header className="sticky top-0 z-30 border-b border-gray-200 bg-white lg:hidden">
       <div className="flex items-center justify-between px-4 py-3">
         <h1 className="text-lg font-bold text-primary-600">{t("appName")}</h1>
         {userName && (
