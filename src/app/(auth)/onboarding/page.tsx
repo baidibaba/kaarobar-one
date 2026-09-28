@@ -8,11 +8,12 @@ import { PinInput } from "@/components/business/PinInput";
 import { Loading } from "@/components/ui/Loading";
 import { useAuth } from "@/hooks/useAuth";
 import { seedDatabase } from "@/db/seed";
+import type { User } from "@/db/schema";
 
 export default function OnboardingPage() {
   const router = useRouter();
   const { user, loading, login } = useAuth();
-  const [selectedUserId, setSelectedUserId] = useState<string | null>(null);
+  const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const [isSeeding, setIsSeeding] = useState(true);
 
   useEffect(() => {
@@ -34,13 +35,11 @@ export default function OnboardingPage() {
 
   return (
     <AuthLayout>
-      <div className="w-full">
-        {!selectedUserId ? (
-          <UserSelection onSelect={setSelectedUserId} />
-        ) : (
-          <PinInput userId={selectedUserId} onSuccess={handlePinSuccess} onBack={() => setSelectedUserId(null)} />
-        )}
-      </div>
+      {!selectedUser ? (
+        <UserSelection onSelect={setSelectedUser} />
+      ) : (
+        <PinInput user={selectedUser} onSuccess={handlePinSuccess} onBack={() => setSelectedUser(null)} />
+      )}
     </AuthLayout>
   );
 }

@@ -11,7 +11,11 @@ export type IconName =
   | "chart-no-axes-column"
   | "settings"
   | "camera"
-  | "wallet";
+  | "wallet"
+  | "mouse-pointer"
+  | "chevron-left"
+  | "arrow-left"
+  | "check-circle";
 
 interface IconProps {
   name: IconName;

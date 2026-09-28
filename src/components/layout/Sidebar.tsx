@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { translations } from "@/lib/i18n/translations";
 import { Avatar } from "@/components/ui/Avatar";
 import { Icon, type IconName } from "@/components/ui/Icon";
+import { Logo } from "@/components/ui/Logo";
 import type { User } from "@/db/schema";
 
 interface NavLink {
@@ -149,14 +150,8 @@ export function Sidebar({ user }: { user: User }) {
 
   return (
     <aside className="fixed left-0 top-0 z-30 hidden h-full w-[280px] flex-col gap-4 border-r border-stone-200 bg-white p-5 lg:flex">
-      <div className="flex items-center gap-[5px] border-b border-stone-200 pb-6">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo-mark.svg" alt="" width={56} height={56} />
-        <span className="text-5xl font-black tracking-[-0.01em] text-accent-logo">1</span>
-        <span className="flex w-[66px] flex-col gap-1 text-primary-600">
-          <span dir="auto" className="text-right text-2xl font-bold">کاروبار</span>
-          <span className="text-sm font-semibold tracking-[-0.01em]">Kaarobar</span>
-        </span>
+      <div className="border-b border-stone-200 pb-6">
+        <Logo />
       </div>
 
       {/* Groups expand in place; the list scrolls so the daily links are never pushed off. */}
