@@ -273,6 +273,7 @@ kaarobar-one/
 | [Components](docs/COMPONENTS.md) | Component library documentation |
 | [API](docs/API.md) | API endpoint documentation |
 | [Deployment](docs/DEPLOYMENT.md) | Deployment guide |
+| [Collaboration](docs/COLLABORATION.md) | Two-developer workflow, work split by Figma section |
 | [Team Guide](TEAM.md) | Collaboration workflow and branch strategy |
 | [AI Guide](AI_GUIDE.md) | AI agent guide — conventions, rules, and patterns |
 
